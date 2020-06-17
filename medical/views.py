@@ -15,7 +15,7 @@ def calc(request):
     ls.append(float(request.GET['BMI']))
     ls.append(float(request.GET['Diabetespedigreefunction']))
     ls.append(int(request.GET['Age']))
-    data = pd.read_csv(r'static\dataset\diabetesample_input.csv')
+    data = pd.read_csv(r'assets\dataset\diabetesample_input.csv')
     x = data.iloc[:,[1,2,3,4,5,6,7]]
     y = data.iloc[:,[8]]
 
