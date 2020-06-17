@@ -15,6 +15,7 @@ def calc(request):
     ls.append(int(request.GET['Insulinlevel']))
     ls.append(float(request.GET['BMI']))
     ls.append(float(request.GET['Diabetespedigreefunction']))
+    ls.append(int(request.GET['Age']))
     script_location = Path(__file__).absolute().parent
     file_path = script_location / 'diabetesample_input.csv'
     data = pd.read_csv(file_path)
