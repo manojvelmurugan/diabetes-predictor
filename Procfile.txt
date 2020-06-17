@@ -1,1 +1,1 @@
-web: gunicorn medical.wsgi
+web: gunicorn DIABETES.wsgi
