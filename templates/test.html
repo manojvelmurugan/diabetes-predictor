@@ -1,0 +1,118 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>DIABETICS PREDICTION</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ </head>
+ <style>
+    body {
+  background-image: url('https://westernnews.media.clients.ellingtoncms.com/img/photos/2019/10/29/diabetes_stock.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+}
+input[type=text]{
+  display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color:transparent;
+    background-image: none;
+    border: 1.5px solid #ccc;
+    border-radius: 6px;
+    border-color: black;
+}
+input[type = submit]
+{
+  color: #fff !important;
+text-transform: uppercase;
+text-decoration: none;
+background: #ed3330;
+padding: 10px;
+padding-right: 50px;
+padding-left: 50px;
+border-radius: 10px;
+display: inline-block;
+border: none;
+transition: all 0.4s ease 0s;
+text-align: center;
+
+}
+input[type = submit]:hover{
+background: #0df352;
+letter-spacing: 1px;
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+text-align: center;
+}
+::placeholder {
+  color:grey;
+  opacity: 1; /* Firefox */
+}
+label {
+  color:darkblue;
+  background-color: transparent;
+  font-family:Algerian;
+  font-weight: 800;
+  font-size: medium;
+}
+ </style>
+
+ <body>
+  <div class="container">
+   
+
+   <h1 style = " text-align:center;font-size:250% ;font-family:Algerian ;font-weight: 500;">DIABETES PREDICTION</h1>
+   <br />
+   <div class="col-md-6" style="margin:0 auto; float:none;">
+    <form  action = "calc">
+     <h3 style = " text-align:center;font-size:250% ;font-family:Algerian;font-weight: 500; ">Enter The Details</h3>
+     <br />
+ 
+     <div class="form-group">
+      <label>Glucose level </label>
+      <input type="text" name="glucoselevel"  placeholder="Enter glucose level" style="color:black;" />
+      
+     </div>
+     <div class="form-group">
+      <label> Blood pressure   </label>
+      <input type="text" name="Bloodpressure"  placeholder="Enter Blood pressure" style="color:black;" />
+     </div>
+     <div class="form-group">
+      <label> Skin thickness </label>
+      <input name="Skinthickness" type="text" placeholder="Enter Skin thickness"style="color:black;"></input>
+     </div>
+     <div class="form-group">
+      <label> Insulin level </label>
+      <input name="Insulinlevel" type="text" placeholder="Enter Insulin level"style="color:black;"></input>
+     </div>
+     <div class="form-group">
+      <label> BMI  </label>
+      <input name="BMI" type="text"  placeholder="Enter  BMI"style="color:black;"></input>
+     </div>
+     <div class="form-group">
+      <label> Diabetes pedigree function   </label>
+      <input name="Diabetespedigreefunction" type="text"  placeholder="Enter Diabetes pedigree function "style="color:black;"></input>
+     </div>
+     <div class="form-group">
+      <label>  Age </label>
+      <input name="Age" type="text"  placeholder="Enter Age"style="color:black;"></input>
+     </div>
+     <div class="form-group" align="center">
+      <input type="submit"></input>
+     </div>
+    </form>
+   </div>
+  </div>
+</div>
+
+ </body>
+</html>
