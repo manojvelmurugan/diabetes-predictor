@@ -28,6 +28,6 @@ sklearn==0.0
 sqlparse==0.3.1
 threadpoolctl==2.1.0
 typed-ast==1.4.1
-urllib3==1.25.9
+urllib3==1.26.5
 whitenoise==5.1.0
 wrapt==1.11.2
